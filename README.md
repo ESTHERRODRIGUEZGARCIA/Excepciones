@@ -8,3 +8,21 @@ Este programa debe ofrecer la posibilidad al usuario de introducir una direcció
 El programa debe continuar si el correo electrónico indicado tiene un formato incorrecto y finalizar si no se reconoce el correo electrónico, ya que se podría tratar de un ciberataque. 
 
 Importante: el método que analiza la cadena de caracteres no debe devolver ningún valor.
+
+Comportamiento esperado: la ejecución del programa en una consola se debe desarrollar de la siguiente manera:
+
+````
+vicente: $ python exceptions.py 
+--> 
+'' es una entrada incorrecta. Introduzca una dirección de correo 
+electrónico 
+--> t 
+Una dirección de correo electrónico debe tener el formato xxx@xxx.xx 
+--> t@t.t 
+Cuenta bloqueada a causa de un ataque 
+vicente: $ python exceptions.py 
+--> vicente@eni.es 
+¡Bienvenido Vicente! 
+
+````
+

@@ -9,6 +9,12 @@ El programa debe continuar si el correo electrónico indicado tiene un formato i
 
 Importante: el método que analiza la cadena de caracteres no debe devolver ningún valor.
 
+Requisitos previos:
+
+Puede usar el módulo de expresiones regulares ofrecido por Python, para determinar si la cadena de caracteres tiene el formato correcto. Para hacerlo, importe el módulo "re" (import re) y utilice el método search() de la siguiente manera: re.search(". * @. * \ .. *", s). Esta línea devolverá None si la cadena s no tiene el formato de una dirección de correo electrónico.
+
+El método input(’->’) le permite recopilar una cadena de caracteres escrita en la entrada estándar (la consola, en este caso).
+
 Comportamiento esperado: la ejecución del programa en una consola se debe desarrollar de la siguiente manera:
 
 ````

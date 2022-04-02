@@ -1,6 +1,9 @@
 # Excepciones
 Ejercicio de Excepciones en POO - ENTREGA INDIVIDUAL
 
+La dirección del repositorio es la siguiente: 
+https://github.com/ESTHERRODRIGUEZGARCIA/Excepciones.git
+
 Enunciado: escriba un programa que simule la conexión de un usuario a un sitio web para el que ya se ha registrado, solo con su dirección de correo electrónico (la gestión de una contraseña está fuera del alcance de esta sección). 
 
 Este programa debe ofrecer la posibilidad al usuario de introducir una dirección de correo electrónico, y mostrará diferentes mensajes de error en función de la cadena introducida. 

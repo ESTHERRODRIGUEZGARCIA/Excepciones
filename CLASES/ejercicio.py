@@ -7,13 +7,13 @@ class Excepcion():
         return self.correo
 
 try:
-    print("Introduzca un correo electrónico")
+    print("Introduzca un correo electrónico: ")
     correo = input()
     s = correo
     re.search(". * @. * \ .. *", s)
     if re.search(". * @. * \ .. *", correo):
-        print("El correo es válido")
+        print("El correo es válido. Bienvenido.")
     else:
-        raise Excepcion("Podría tratarse de un ciberataque. ")
+        raise Excepcion(correo, " es una entrada incorrecta. Introduzca una dirección de correo electrónico. ")
 except Excepcion as e:
     print("Excepción capturada: {}".format(e))

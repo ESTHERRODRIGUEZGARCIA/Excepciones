@@ -21,9 +21,9 @@ try:
             print("El correo es válido. Bienvenido.")
         else:
             raise Excepcion("Una dirección de correo electrónico debe tener el formato xxx@xxx.xx")
-    except Excepcion as e:
+    except Excepcion():
         print("Cuenta bloqueada a causa de un ataque.")
 
 finally:
     print("Gracias por usar nuestro programa.")
-    
+

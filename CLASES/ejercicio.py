@@ -1,10 +1,10 @@
 import re
 
 class Excepcion():
-    def __init__(self, mensaje):
-        self.mensaje = mensaje
+    def __init__(self, correo):
+        self.correo = correo
     def __str__(self):
-        return self.mensaje
+        return self.correo
 
 try:
     print("Introduzca un correo electrónico")

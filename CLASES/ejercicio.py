@@ -1,10 +1,10 @@
 import re
 
 class Excepcion():
-    def __init__(self, correo):
+    def __init__(self, correo): # Este atributo permite tener una información adicional sobre el motivo del desencadenamiento.
         self.correo = correo
     def __str__(self):      #Para poder visualizar una excepción correctamente
-        return self.correo
+        return self.correo  # Mensaje de error que se podrá mostrar si la excepción se captura.
 
 try:
     print("Introduzca un correo electrónico: ")

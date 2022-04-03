@@ -1,6 +1,6 @@
 import re
 
-class miExcepcion():
+class Excepcion():
     def __init__(self, mensaje):
         self.mensaje = mensaje
     def __str__(self):
@@ -14,6 +14,6 @@ try:
     if re.search(". * @. * \ .. *", correo):
         print("El correo es válido")
     else:
-        raise miExcepcion("Podría tratarse de un ciberataque. ")
-except miExcepcion as e:
+        raise Excepcion("Podría tratarse de un ciberataque. ")
+except Excepcion as e:
     print("Excepción capturada: {}".format(e))

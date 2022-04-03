@@ -15,5 +15,10 @@ try:
         print("El correo es válido. Bienvenido.")
     else:
         raise Excepcion(correo, " es una entrada incorrecta. Introduzca una dirección de correo electrónico. ")
-except Excepcion as e:
-    print("Excepción capturada: {}".format(e))
+    try:
+        re.search(". * @. * \ .. *", s)
+        if re.search(". * @. * \ .. *", correo):
+            print("El correo es válido. Bienvenido.")
+        else:
+            raise Excepcion(" Cuenta bloqueada a causa de un ataque.")
+    

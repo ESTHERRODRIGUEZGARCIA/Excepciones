@@ -20,5 +20,10 @@ try:
         if re.search(". * @. * \ .. *", correo):
             print("El correo es válido. Bienvenido.")
         else:
-            raise Excepcion(" Cuenta bloqueada a causa de un ataque.")
+            raise Excepcion("Una dirección de correo electrónico debe tener el formato xxx@xxx.xx")
+    except Excepcion as e:
+        print("Cuenta bloqueada a causa de un ataque.")
+
+finally:
+    print("Gracias por usar nuestro programa.")
     

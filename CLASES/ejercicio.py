@@ -9,12 +9,13 @@ class Excepcion():
 try:
     print("Introduzca un correo electrónico: ")
     correo = input()
-    mail = correo 
-    s = re.search(". * @. * \ .. *", correo)
-    if s(True):
+    mail = correo
+    s = re.search(". * @. * \ .. *", mail)
+    error = s
+    if error (True):
         print("El correo es válido. Bienvenido.")
     else:
-        raise Excepcion(correo)
+        raise Excepcion(mail)
 
 except TypeError as e:
     print(e)

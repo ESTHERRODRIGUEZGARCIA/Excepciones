@@ -14,13 +14,10 @@ try:
     if re.search(". * @. * \ .. *", s):
         print("El correo es válido. Bienvenido.")
     else:
-        raise TypeError(" es una entrada incorrecta. Introduzca una dirección de correo electrónico. ")
-    try:
-        if re.search(". * @. * \ .. *", s):
-            print("El correo es válido. Bienvenido.")
-        else:
-            raise Excepcion("Una dirección de correo electrónico debe tener el formato xxx@xxx.xx")
-    except Excepcion():
+        raise TypeError(" es una entrada incorrecta. Introduzca una dirección de correo electrónico. Debe tener el formato xxx@xxx.xx ")
+        
+except TypeError as e:
+        print(e)
         print("Cuenta bloqueada a causa de un ataque.")
 
 finally:

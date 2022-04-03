@@ -10,11 +10,11 @@ try:
     print("Introduzca un correo electrónico: ")
     correo = input()
     mail = correo 
-    s = re.search(". * @. * \ .. *", mail)
+    s = re.search(". * @. * \ .. *", correo)
     if s(True):
         print("El correo es válido. Bienvenido.")
     else:
-        raise Excepcion(mail)
+        raise Excepcion(correo)
 
 except TypeError as e:
     print(e)

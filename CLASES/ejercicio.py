@@ -14,7 +14,7 @@ try:
     if re.search(". * @. * \ .. *", s):
         print("El correo es válido. Bienvenido.")
     else:
-        raise Excepcion(" es una entrada incorrecta. Introduzca una dirección de correo electrónico. ")
+        raise TypeError(" es una entrada incorrecta. Introduzca una dirección de correo electrónico. ")
     try:
         if re.search(". * @. * \ .. *", s):
             print("El correo es válido. Bienvenido.")

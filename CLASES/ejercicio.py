@@ -10,7 +10,7 @@ try:
     print("Introduzca un correo electrónico: ")
     correo = input()
     re.search(". * @. * \ .. *", correo)
-    if correo = re.search(". * @. * \ .. *", correo):
+    if correo == re.search(". * @. * \ .. *"):
         print("El correo es válido. Bienvenido.")
     else:
         raise TypeError("Es una entrada incorrecta. Introduzca una dirección de correo electrónico. Debe tener el formato xxx@xxx.xx ")
